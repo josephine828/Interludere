@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    height: 5rem;
+    box-shadow: 0 2px;
+  }
+  
+  header h1 {
+    padding-left: 30px;
+    margin-top: 1rem;
+  }
+  
+  #tabsContainer {
+    display: flex;
+    margin-left: auto; 
+    margin-right: 0;
+  }
+  
+  #tabsContainer div, #tabsContainer a {
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  #tabsContainer div:hover, #tabsContainer a:hover {
+      cursor: pointer;
+  }
+  
