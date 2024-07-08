@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-light: #2d2d2d;
+  /* Dark gray for text */
+  --background-light: #f9f6f1;
+  /* Light cream for background */
+  --accent-light: #ffb3c1;
+  /* Soft pink for accents */
+  --secondary-light: #ffe0ac;
+  /* Pastel yellow for secondary accents */
+  --highlight-light: #c1e1c5;
+  /* Pastel green for highlights */
+
+  --foreground-dark: #f9f6f1;
+  /* Light cream for text in dark mode */
+  --background-dark: #2d2d2d;
+  /* Dark gray for background in dark mode */
+  --accent-dark: #ff8aa1;
+  /* Slightly darker pink for dark mode */
+  --secondary-dark: #ffcc7a;
+  /* Slightly darker yellow for dark mode */
+  --highlight-dark: #a1d3a5;
+  /* Slightly darker green for dark mode */
+}
+
+body.light {
+  color: var(--foreground-light);
+  background-color: var(--background-light);
+}
+
+body.dark {
+  color: var(--foreground-dark);
+  background-color: var(--background-dark);
+}
+
+a {
+  color: var(--accent-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+body.dark a {
+  color: var(--accent-dark);
+}
+
+a:hover {
+  color: var(--secondary-light);
+}
+
+body.dark a:hover {
+  color: var(--secondary-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--accent-light);
+  margin-top: 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6 {
+  color: var(--accent-dark);
+}
+
+button {
+  background-color: var(--highlight-light);
+  color: var(--foreground-light);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+body.dark button {
+  background-color: var(--highlight-dark);
+  color: var(--foreground-dark);
+}
+
+button:hover {
+  background-color: var(--secondary-light);
+}
+
+body.dark button:hover {
+  background-color: var(--secondary-dark);
+}
+
+.container {
+  padding: 2rem;
+}
